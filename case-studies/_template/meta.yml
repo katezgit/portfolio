@@ -1,0 +1,37 @@
+# Copy this folder to case-studies/{startup-slug}/ and fill in.
+# Single source of truth for deck-level metadata. Decks reference paths from here.
+
+slug: example-startup                  # lowercase-kebab, matches folder name
+name: Example Startup                  # display name
+tagline: One-line product context.     # what the target product does
+category: SaaS dashboard               # SaaS dashboard | landing | onboarding | data tool | etc.
+
+# Links
+source_url: https://example.com        # the original product (before)
+live_url: https://example-redesign.vercel.app  # deployed redesign prototype (after)
+repo_path: prototypes/example-startup  # local path to prototype source (relative to portfolio root)
+
+# Dates (YYYY-MM-DD)
+started: 2026-06-29
+shipped:
+
+# Status: drafting | building | shipped | archived
+status: drafting
+
+# Screenshots in display order. Filename pairs across before/ and after/ that share a name
+# are treated as a before↔after pair by the deck.
+screens:
+  - id: dashboard
+    label: Main dashboard
+    before: before/dashboard.png
+    after: after/dashboard.png
+  - id: empty-state
+    label: Empty state
+    before: before/empty-state.png
+    after: after/empty-state.png
+
+# Three core decisions to highlight in the deck (kept here so the deck and case-study stay in sync).
+decisions:
+  - Rebuilt page hierarchy around the user's primary job.
+  - Reduced visual noise so the primary action is obvious within 3 seconds.
+  - Standardized spacing, type, and component states.

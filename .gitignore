@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output (per-prototype)
+prototypes/*/.next/
+prototypes/*/dist/
+prototypes/*/build/
+prototypes/*/out/
+
+# Deck build output
+decks/*/dist/
+
+# Env
+.env
+.env.local
+.env*.local
+
+# Intermediate workspace — scratch, drafts, WIP, audit screenshots (never committed)
+.intermediate/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Claude Code local settings
+.claude/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
